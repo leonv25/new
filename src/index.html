@@ -7,7 +7,8 @@
     <title>Pulse</title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/slick.css">
+    <!-- <link rel="stylesheet" href="css/slick.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -123,26 +124,38 @@
     <section class="carousel">
        <div class="container">
            <div class="carousel__inner">
-            <div>
-                <img src="img/slider/polar_rs3.jpg" alt="polar">
+               <div>
+                   <img src="img/slider/polar_rs3.jpg" alt="polar">
+               </div>
+               <div>
+                   <img src="img/slider/polar_m600.jpg" alt="polar">
+               </div>
+               <div>
+                   <img src="img/slider/polar_m400.jpg" alt="polar">
+               </div>
             </div>
-            <div>
-                <img src="img/slider/polar_m600.jpg" alt="polar">
-            </div>
-            <div>
-                <img src="img/slider/polar_m400.jpg" alt="polar">
-            </div>
-        </div>
-
-
-             
-
+            <!-- Початок коду для слайдера по способу Tiny Slider -->
+            <button type="button" class="prev">
+                <img src="icons/left.png">
+            </button>
+            <button type="button" class="next">
+                <img src="icons/right.png">
+            </button>
+           <!-- Кінець коду для слайдера по способу Tiny Slider -->
         </div>
     </section>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <!-- Початок коду для слайдера по способу Slick Slider -->
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script  src="js/slick.min.js"></script>
+    <script  src="js/slick.min.js"></script> -->
+    <!-- Кінець коду для слайдера по способу Slick Slider -->
+
+    <!-- Початок коду для слайдера по способу Tiny Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <!-- Кінець коду для слайдера по способу Tiny Slider -->
+
     <script src="js/script.js"></script>
     
 </body>
