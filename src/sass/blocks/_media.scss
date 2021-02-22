@@ -1,0 +1,47 @@
+@media (max-width: 1200px) {
+    .carousel {
+        /* початок адаптації суто під  Tiny Slider*/
+        &__inner {
+            .tns-item {
+                img {
+                    width: 70%;
+                }
+            }
+        }
+        /* кінець адаптації суто під  Tiny Slider*/
+        
+        /* початок де є варіації в назві класу залежно від того який метод застосовується 
+    Slick Slider (.slick-prev, .slick-next) чи Tiny Slider (.prev, .next)*/
+        .prev {
+            left: inherit;
+        }
+        .next {
+            right: 0px;
+        }
+         /* кінець де є варіації в назві класу залежно від того який метод застосовується 
+    Slick Slider (.slick-prev, .slick-next) чи Tiny Slider (.prev, .next)*/
+    }
+}
+
+@media (max-width: 991px) {
+    .promo {
+        padding: 21px 7px 93px 7px;
+    }
+
+    /* початок адаптації суто під  Tiny Slider*/
+    .carousel {
+        button {
+            display: none;
+        }
+    }
+    /* кінець адаптації суто під  Tiny Slider*/
+}
+
+@media (max-width: 767px) {
+    .advantages {
+        &___wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
