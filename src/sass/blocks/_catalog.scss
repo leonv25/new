@@ -45,6 +45,7 @@
         border: solid 2px #e8e8e8;
         padding: 20px 20px 26px 20px;
         margin-top: 60px;
+        overflow: hidden;
         img {
             max-width: 100%;
             display: block;
@@ -98,6 +99,29 @@
             font-size: 20px;
             font-weight: bold;
             color: #050505;
+        }
+        &__wrapper {
+            display: flex;
+            width: calc(200% + 40px); /* використовується бо іза  margin-right: 20px; та margin-left: 20px елементи стають не поцентру*/
+        }
+        &__content {
+            width: 50%;
+            margin-right: 0px;
+            transform: translateX(-100%);
+            &_active {
+                transform: translateX(0%);
+                margin-right: 20px;
+            }
+        }
+        &__list {
+            width: 50%;
+            margin-left: 20px;
+            transform: translateX(0%);
+            &_active {
+                transform: translateX(-100%);
+                margin-right: 0px;
+            }
+
         }
     }
 }
