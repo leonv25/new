@@ -7,7 +7,7 @@
     }
     /* початок де є варіації в назві класу залежно від того який метод застосовується 
     Slick Slider (.slick-prev, .slick-next) чи Tiny Slider (.prev, .next)*/
-    .prev, .next {
+    .slick-prev, .slick-next {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -19,7 +19,7 @@
             height: 50px;
         }
     }
-    .next {
+    .slick-next {
         right: -66px;
         left: auto;
     }
@@ -27,7 +27,7 @@
     Slick Slider (.slick-prev, .slick-next) чи Tiny Slider (.prev, .next)*/
 
     /* Початок коду для слайдера по способу Tiny Slider */
-    .container {
+   /*  .container {
         position: relative;
     }
     .tns-item {
@@ -36,7 +36,7 @@
             margin: 0 auto;
         }
         
-    }
+    } */
     /* Кінець коду для слайдера по способу Tiny Slider */
     
     
