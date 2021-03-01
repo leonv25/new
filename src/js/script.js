@@ -15,10 +15,10 @@ $(document).ready(function(){
     ]
   });
 
-  $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+  $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {/* потрібна крапка */
     $(this)
-      .addClass('active').siblings().removeClass('active')
-      .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+      .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active') /* не потрібна крапка */
+      .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
   });
 
 
