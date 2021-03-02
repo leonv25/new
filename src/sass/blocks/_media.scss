@@ -1,25 +1,40 @@
 @media (max-width: 1200px) {
     .carousel {
-        /* початок адаптації суто під  Tiny Slider*/
+        /* Початок адаптації під  Slick Slider*/
         &__inner {
+            width: 70%;
+            .slick-track {
+                width: 70%;
+                img {
+                    width: 80%;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        /* Кінець адаптації під  Slick Slider*/
+
+
+
+        /* початок адаптації суто під  Tiny Slider*/
+       /*  &__inner {
             .tns-item {
                 img {
                     width: 70%;
                 }
             }
-        }
+        } */
         /* кінець адаптації суто під  Tiny Slider*/
         
-        /* початок де є варіації в назві класу залежно від того який метод застосовується 
-    Slick Slider (.slick-prev, .slick-next) чи Tiny Slider (.prev, .next)*/
-        .prev {
+        /* початок Tiny Slider (.prev, .next)*/
+        /* .prev {
             left: inherit;
         }
         .next {
             right: 0px;
-        }
-         /* кінець де є варіації в назві класу залежно від того який метод застосовується 
-    Slick Slider (.slick-prev, .slick-next) чи Tiny Slider (.prev, .next)*/
+        } */
+        /* кінець для Tiny Slider (.prev, .next)*/
     }
 }
 
@@ -29,11 +44,11 @@
     }
 
     /* початок адаптації суто під  Tiny Slider*/
-    .carousel {
+   /*  .carousel {
         button {
             display: none;
         }
-    }
+    } */
     /* кінець адаптації суто під  Tiny Slider*/
 }
 
