@@ -1,4 +1,19 @@
 @media (max-width: 1200px) {
+    .promo {
+        .header {
+            padding-left: 70px;
+            width: 90%;
+        }
+        &_wrapper {
+            width: 90%;
+        }
+        &__header {
+            font-size: 37px;
+        }
+        &__subheader {
+            font-size: 19px;
+        }
+    }
     .carousel {
         /* Початок адаптації під  Slick Slider*/
         &__inner {
@@ -12,11 +27,8 @@
                 }
             }
         }
-
         /* Кінець адаптації під  Slick Slider*/
-
-
-
+        
         /* початок адаптації суто під  Tiny Slider*/
        /*  &__inner {
             .tns-item {
@@ -40,7 +52,18 @@
 
 @media (max-width: 991px) {
     .promo {
-        padding: 21px 7px 93px 7px;
+        .header {
+            width: 95%;
+        }
+        &_wrapper {
+            width: 95%;
+        }
+        &__header {
+            font-size: 37px;
+        }
+        &__subheader {
+            font-size: 19px;
+        }
     }
 
     /* початок адаптації суто під  Tiny Slider*/
@@ -60,3 +83,10 @@
         }
     }
 }
+
+/* @media (max-width: 767px) {
+    .promo {
+        width: 60%;
+    }
+
+} */
