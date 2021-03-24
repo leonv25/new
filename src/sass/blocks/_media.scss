@@ -76,6 +76,18 @@
 }
 
 @media (max-width: 767px) {
+    .header {
+        &__official {
+            &:nth-child(2) {
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            font-size: 11px;
+            span {
+                font-size: 14px;
+            }
+        }
+    }
     .advantages {
         &___wrapper {
             flex-direction: column;
